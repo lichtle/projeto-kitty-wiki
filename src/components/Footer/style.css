@@ -1,0 +1,15 @@
+.footer-img {
+  width: 100vw;
+  height: 3rem;
+  filter: grayscale(100%);
+  background: url("../../assets/paw-print.png") space;
+  background-size: contain;
+  margin-top: 5rem;
+}
+
+@media (max-width: 576px) {
+  .footer-img {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,133 @@
+.spotlight-container {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-header {
+  text-align: center;
+  border: 2px solid;
+  border-color: #ffa4dc;
+  border-radius: 5rem;
+  padding: 1rem 4rem 1rem 3rem;
+  max-width: 30rem;
+  display: flex;
+  position: relative;
+}
+
+.spotlight-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-family: "Mynerve", cursive;
+}
+
+.spotlight-title,
+.click-for-details-p {
+  color: #a6a6a6;
+}
+
+.paw-button {
+  width: 8rem;
+  position: absolute;
+  top: -2rem;
+  right: -3rem;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 10rem;
+  opacity: 0.4;
+  position: absolute;
+  rotate: 45deg;
+  right: 37rem;
+  top: 4rem;
+}
+
+.click-to-randomize-p,
+.click-for-details-p {
+  font-family: "Mynerve", cursive;
+  font-size: 1.8rem;
+
+  text-transform: uppercase;
+}
+
+.click-to-randomize-p {
+  color: #ffa4dc;
+  position: absolute;
+  right: 11rem;
+  top: 6rem;
+}
+
+.click-for-details-p {
+  font-size: 2rem;
+  align-self: center;
+  position: absolute;
+  bottom: 9rem;
+}
+
+.spotlight-images-container {
+  border: 0.8rem solid #fbd8ff;
+  border-radius: 2rem;
+  margin-top: 5rem;
+}
+
+.spotlight-images {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .image:hover {
+    opacity: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  .spotlight-container {
+    margin-left: 0;
+  }
+
+  .spotlight-header {
+    align-self: center;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .paw-button {
+    top: -2rem;
+    right: -3rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .spotlight-images-container {
+    width: 85%;
+    align-self: center;
+  }
+
+  .image {
+    width: 8rem;
+    height: 8rem;
+  }
+}
